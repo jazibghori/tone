@@ -1,9 +1,15 @@
 input.onButtonPressed(Button.A, function () {
-    music.playTone(400, 500)
+    music.playMelody("B A G F E D C - ", 120)
+    music.playMelody("C5 B A G F E D C ", 120)
+    music.playMelody("B E G C A B A C ", 120)
 })
 input.onButtonPressed(Button.AB, function () {
-    music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
+    music.playMelody("B E G C A B A C ", 120)
+    music.playMelody("B A G F E D C - ", 120)
+    music.playMelody("C5 B A G F E D C ", 120)
 })
 input.onButtonPressed(Button.B, function () {
-    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.playMelody("C5 B A G F E D C ", 120)
+    music.playMelody("B E G C A B A C ", 120)
+    music.playMelody("B A G F E D C - ", 120)
 })
